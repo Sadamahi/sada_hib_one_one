@@ -1,0 +1,6 @@
+Main thread Iterating Map and current entry is 101   A
+Child thread
+Exception in thread "main" java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(Unknown Source)
+	at java.util.HashMap$KeyIterator.next(Unknown Source)
+	at com.poc.interview.ConcurrentModificationErrorInHashMap.main(ConcurrentModificationErrorInHashMap.java:37)
