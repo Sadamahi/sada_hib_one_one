@@ -37,7 +37,7 @@ public class App
 		
 		Transaction transaction = session.beginTransaction();
 		session.save(q);
-		session.save(a);
+		//session.save(a);
 		
 		transaction.commit();
 		session.clear();

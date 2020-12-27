@@ -3,9 +3,11 @@ package com.poc.interview;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class ConcurrentModificationErrorInHashMap extends Thread{
-	static HashMap m=new HashMap();
+	static ConcurrentHashMap m=
+			new ConcurrentHashMap<Integer,String>();
 	
 	public  void run( )
 	{
